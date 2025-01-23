@@ -7,7 +7,7 @@ const About = () => {
       {/* Photo Section */}
       <div className="photo-container">
         <img
-          src="/images/profile/2.jpg" // Replace with your photo's path
+          src="./images/profile/2.jpg" // Replace with your photo's path
           alt="Your Name"
           className="profile-photo"
         />

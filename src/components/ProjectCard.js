@@ -98,6 +98,7 @@ const ProjectCard = ({ project }) => {
                                 autoPlay={item.autoplay || false}
                                 loop={item.loop || false}
                                 controls
+                                playsInline
                                 onClick={() => openModal(item)} // Open modal on click
                             >
                                 Your browser does not support the video tag.

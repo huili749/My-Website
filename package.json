@@ -11,12 +11,10 @@
     "smoothscroll-polyfill": "^0.4.4",
     "web-vitals": "^4.2.4"
   },
-  "homepage": "https://huili749.github.io/My-Website",
+
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "npm run build",
-   "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

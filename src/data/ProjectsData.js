@@ -5,10 +5,10 @@ const ProjectsData = [
         institute: "CS50 Final Project",
         year: "2024 Fall",
         images: [
-            { type: "image", src: `${process.env.PUBLIC_URL}/images/computational-projects/color-palette-manager/hero.jpg`},
+            { type: "image", src: "./images/computational-projects/color-palette-manager/hero.jpg"},
             { type: "text", content: "Color Palette Manager is a web application designed to help users generate and manage a personal library of color palettes. It offers features for creating color palettes, saving them into customizable categories, and downloading palettes for use. Users can edit the colors of generated palettes and manage their library by renaming categories, deleting categories, or removing individual palettes. The application is built with Python (Flask) on the backend and HTML, CSS, and JavaScript for the frontend."},
-            { type: "image", src: `${process.env.PUBLIC_URL}/images/computational-projects/color-palette-manager/gallery-1.jpg`},
-            { type: "image", src: `${process.env.PUBLIC_URL}/images/computational-projects/color-palette-manager/gallery-2.jpg`},
+            { type: "image", src: "./images/computational-projects/color-palette-manager/gallery-1.jpg"},
+            { type: "image", src: "./images/computational-projects/color-palette-manager/gallery-2.jpg"},
         ],
         description: "Web Application, HTML, CSS, Python, Javascript",
         school: "Harvard",

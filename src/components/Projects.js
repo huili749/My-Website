@@ -30,23 +30,28 @@ const Projects = ({ projects }) => {
 
                     {/* Project Media */}
                     <div className="project-media">
-                        {project.images[0]?.type === "video" ? (
-                            <video
-                                className="project-video"
-                                src={project.images[0]?.src} // Render the first video
-                                controls
-                                autoPlay
-                                loop
-                                muted
-                            ></video>
-                        ) : (
-                            <img
-                                className="project-image"
-                                src={project.images[0]?.src} // Render the first image
-                                alt={`${project.name} media`}
-                                loading="lazy"
-                            />
-                        )}
+                        <Link 
+                            to={`/projects/${project.id}`}
+                            onClick={handleSaveScrollPosition}
+                        >
+                            {project.images[0]?.type === "video" ? (
+                                <video
+                                    className="project-video"
+                                    src={project.images[0]?.src} // Render the first video
+                                    controls
+                                    autoPlay
+                                    loop
+                                    muted
+                                ></video>
+                            ) : (
+                                <img
+                                    className="project-image"
+                                    src={project.images[0]?.src} // Render the first image
+                                    alt={`${project.name} media`}
+                                    loading="lazy"
+                                />
+                            )}
+                        </Link>
                     </div>
                 </div>
             ))}

@@ -34,9 +34,8 @@
   .project-name a:hover {
     color: rgb(77, 182, 227);
   }
-  
+
   .project-detail {
-    font-size: 0.8rem;
     color: gray;
     text-transform: capitalize;
   }
@@ -79,18 +78,30 @@
 
 @media (orientation: portrait) and (max-width: 768px) {
   .project-item {
-    padding-left: 5%;
+    padding-left: 0;
+    gap: 1rem;
   }
 
   .project-name {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   .project-detail {
     font-size: 0.5rem;
   }
 
+  .project-media {
+    width: fit-content;
+    height: auto;
+    overflow: hidden;
+    align-items: center;
+  }
+
   .projects-container {
     gap: 1rem; 
+  }
+
+  .project-info {
+    gap: 0.3rem;
   }
 }

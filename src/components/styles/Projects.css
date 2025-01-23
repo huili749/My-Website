@@ -1,0 +1,96 @@
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+    overflow: auto;
+  }
+  
+  .project-item {
+    display: flex;
+    flex-direction: row; 
+    gap: 2rem;
+    padding-left: 12%;
+  }
+  
+  .project-info {
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+    text-align: right;
+    gap: 0.5rem;
+    flex: 0 0 30%; 
+  }
+
+  .project-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .project-name a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+
+  .project-name a:hover {
+    color: rgb(77, 182, 227);
+  }
+  
+  .project-detail {
+    font-size: 0.8rem;
+    color: gray;
+    text-transform: capitalize;
+  }
+  
+  .project-media {
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    height: auto;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  .project-image, .project-video {
+    width: 100%; /* 图片宽度填充容器 */
+    height: 100%; /* 图片高度填充容器 */
+    transition: transform 0.8s ease, filter 0.8s ease;
+}
+
+.project-video {
+    outline: none; /* 去掉视频的默认边框 */
+}
+
+.project-media:hover img {
+    transform: scale(1.05); /* 鼠标悬停时放大10% */
+}
+
+/* 平板设备 */
+@media (orientation: portrait) and (max-width: 1024px) {
+  .project-item {
+    padding-left: 10%;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 1024px) {
+  .project-item {
+    padding-left: 10%;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 768px) {
+  .project-item {
+    padding-left: 5%;
+  }
+
+  .project-name {
+    font-size: 0.8rem;
+  }
+
+  .project-detail {
+    font-size: 0.5rem;
+  }
+
+  .projects-container {
+    gap: 1rem; 
+  }
+}

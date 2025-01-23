@@ -1,0 +1,63 @@
+/* 引入 Raleway 字体 */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* 全局样式 */
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: auto; /* Ensure scrolling is enabled */
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+body {
+  margin: 0;
+  font-family: 'Raleway', serif; /* 使用 Raleway 作为全局字体 */
+  font-optical-sizing: auto; /* 自动调整字体的光学优化 */
+  font-weight: 400; /* 默认字体粗细 */
+  font-style: normal; /* 默认字体样式 */
+  -webkit-font-smoothing: antialiased; /* 平滑字体显示 */
+  -moz-osx-font-smoothing: grayscale; /* 平滑字体显示 */
+}
+
+/* 针对代码段样式 */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  color: #d6336c;
+  background-color: #f8f9fa;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+/* 特定 Raleway 样式 */
+.raleway-bold {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 700; /* 粗体 */
+  font-style: normal;
+}
+
+.raleway-light {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 300; /* 轻体 */
+  font-style: normal;
+}
+
+.raleway-thin {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 100; /* 极细体 */
+  font-style: normal;
+}
+
+/* 示例：针对标题和段落的特定样式 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", serif; /* 为标题使用 Raleway */
+  font-weight: 700; /* 加粗标题 */
+}
+
+p {
+  font-family: "Raleway", serif; /* 为段落使用 Raleway */
+  font-weight: 400; /* 普通字体 */
+  line-height: 1.6;
+}

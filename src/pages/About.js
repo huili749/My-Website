@@ -7,7 +7,7 @@ const About = () => {
       {/* Photo Section */}
       <div className="photo-container">
         <img
-          src="./images/profile/2.jpg" // Replace with your photo's path
+          src={`${process.env.PUBLIC_URL}/images/profile/2.jpg`}
           alt="Your Name"
           className="profile-photo"
         />
@@ -31,7 +31,7 @@ const About = () => {
 
         {/* Link to CV */}
         <a
-          href="/files/HL-CV.pdf" // Replace with your CV file path
+          href={`${process.env.PUBLIC_URL}/files/HL-CV.pdf`} // Replace with your CV file path
           target="_blank"
           rel="noopener noreferrer"
           className="cv-link"

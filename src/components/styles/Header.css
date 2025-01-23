@@ -1,0 +1,188 @@
+/* Header styles */
+.header {
+    flex: 0 0 5rem; /* Fixed width for the header */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    border-right: 1px solid #ddd;
+}
+
+.vertical-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 1rem 0 ;
+}
+
+.button {
+    height: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.hamburger .line {
+    width: 1.8rem;
+    height: 0.15rem;
+    background: black;
+    transition: 0.3s;
+}
+
+.search {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.vertical-title {
+    writing-mode: vertical-lr; /* Vertical text */
+    height: 93%;
+    transform: rotate(180deg);
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    color: black;
+}
+
+/* Menu Drawer */
+.menu-drawer {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Hidden initially */
+    width: 300px;
+    height: 100%;
+    background: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    transition: 0.3s ease;
+    z-index: 1100;
+}
+
+.menu-drawer.open {
+    left: 0; /* Slide in */
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.menu-header .close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.menu-items {
+    list-style: none;
+    padding: 0;
+    font-family: 'Raleway', serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.menu-items li {
+    margin-bottom: 1rem;
+}
+
+.menu-items li a {
+    display: inline-flex; /* Enable alignment for text and line */
+    align-items: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    position: relative;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.menu-items li a:hover {
+    padding-left: 1.5rem;
+}
+
+.menu-items li a::before {
+    content: ""; /* Empty content for the line */
+    width: 0; /* Initial width is 0 */
+    height: 1.2px; /* Line thickness */
+    background-color: rgb(59, 59, 59); /* Line color */
+    position: absolute; /* Position relative to the link */
+    left: 0; /* Position the line slightly to the left of the text */
+    top: 50%; /* Center vertically */
+    transition: all 0.3s ease; /* Smooth animation for hover effects */
+    opacity: 0; /* Hide the line initially */
+}
+
+.menu-items li a:hover::before {
+width: 1.3rem; /* Length of the line */
+opacity: 1; /* Make the line visible */
+}
+
+/* 平板设备 */
+@media (orientation: portrait) and (max-width: 1024px) {
+    .header {
+        flex: 0 0 4rem;
+        flex-direction: row;
+        border-right: 0;
+        padding: 0 1rem;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .vertical-menu {
+        flex-direction: row;
+        width: 100%;
+        padding: 0 1rem ;
+    }
+
+    .button {
+        width: 10%;
+        height: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .vertical-title {
+        display: flex;
+        flex-direction: row;
+        writing-mode: initial;
+        width: 92%;
+        transform: rotate(0);
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+}
+
+/* 手机设备 */
+@media (orientation: portrait) and (max-width: 768px) {
+    .header {
+        flex: 0 0 3rem;
+    }
+
+    .button {
+        width: 20%;
+    }
+
+    .hamburger .line {
+        width: 1.2rem;
+    }
+
+    .vertical-title {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,16 @@
+    {
+        id: "15",
+        name: "Data analyze for Natural Ventilation",
+        institute: "GSD",
+        year: "2024 Spring",
+        images: [
+            { type: "image", src: "/images/computational-projects/data-analysis/hero.jpg"},
+            { type: "text", content: ""},
+        
+        ],
+        description: "Data Analysis",
+        school: "GSD",
+
+        team: "Teammate: Yiqun Wang",
+        tags: ["computational"],
+    },

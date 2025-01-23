@@ -33,13 +33,9 @@ const Home = () => {
   }, []);
   
   return (
-    <div className="wrapper">
-        <div className="main-wrapper">
-            <main className="content" ref={contentRef}>
-                <Projects projects={ProjectsData} />
-            </main>
-        </div>
-    </div>
+    <main className="content" ref={contentRef}>
+        <Projects projects={ProjectsData} />
+    </main>
   );
 };
 

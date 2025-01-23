@@ -30,6 +30,7 @@ main.content {
     height: 100vh; /* Full viewport height */
     overflow-y: auto; /* Enable vertical scrolling */
     scroll-behavior: smooth; /* For smooth scroll restoration */
+    box-sizing: border-box;
 }
 
 .content::-webkit-scrollbar {

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom'; // Add BrowserRouter here
+import { HashRouter } from 'react-router-dom'; // Add BrowserRouter here
 import { ScrollProvider } from './context/ScrollContext';
 import './index.css';
 import App from './App';
@@ -13,11 +13,11 @@ smoothscroll.polyfill();
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <ScrollProvider>
         <App />
       </ScrollProvider> 
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
 

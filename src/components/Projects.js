@@ -42,7 +42,7 @@ const Projects = ({ projects }) => {
                                     autoPlay
                                     loop
                                     muted
-                                    
+                                    playsInline
                                 ></video>
                             ) : (
                                 <img

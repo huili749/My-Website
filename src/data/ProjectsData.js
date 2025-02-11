@@ -124,6 +124,7 @@ const ProjectsData = [
         images: [
             { type: "image", src: "./images/urban-projects/city-as-resourse/hero.jpg"},
             { type: "text", content: "Berlin is facing a need to supply additional housing due to continuous population growth. According to Berlin's land use map (Flächennutzungsplan), Berlin plans to construct more housing in the undeveloped green areas to meet the needs. This is happening in Tempelhof, where their former airport area was transformed into a great open space for the public but is now facing future housing developments. Instead of filling up green areas, there is a need to densify, transform, and reuse the given lands and existing resources to minimize outward expansion and preserve natural environments. The proposal seeks to relocate the development planned on the Tempelhof airport to the industrial area along the Teltow Canal by utilizing existing resources."},
+            { type: "video", src: "./images/urban-projects/city-as-resourse/gis-site-fnp.mp4", autoplay: true, loop: true},
             { type: "text", content: "'Courtyard as Catalyst for Coexistence' is about transforming the industrial area into a unified, livable, mixed-use neighborhood by 1.Creating a series of courtyards where diverse activities could be held to foster the mix of people and different functions, 2.Densifying around the courtyards by utilizing existing structures and 3.Improving the access to the waterfront. Therefore, use the given lands and existing resources to minimize outward expansion and preserve natural environments."},
             { type: "image", src: "./images/urban-projects/city-as-resourse/g-1.jpg"},
             { type: "image", src: "./images/urban-projects/city-as-resourse/g-3.jpg"},
@@ -132,8 +133,10 @@ const ProjectsData = [
             { type: "image", src: "./images/urban-projects/city-as-resourse/g-4.jpg"},
             { type: "image", src: "./images/urban-projects/city-as-resourse/g-5.jpg"},
             { type: "image", src: "./images/urban-projects/city-as-resourse/g-6.jpg"},
+            { type: "image", src: "./images/urban-projects/city-as-resourse/DSCF3011.jpg"},
             { type: "image", src: "./images/urban-projects/city-as-resourse/g-7.jpg"},
             { type: "image", src: "./images/urban-projects/city-as-resourse/g-8.jpg"},
+            { type: "video", src: "./images/urban-projects/city-as-resourse/before.mp4", autoplay: true, loop: true},
         ],
         description: "Adaptive Reuse",
         school: "GSD",

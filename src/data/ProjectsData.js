@@ -79,7 +79,7 @@ const ProjectsData = [
             { type: "video", src: "./images/professional-projects/the-great-gwangju/phased-1.mp4", autoplay: true, loop: true},
             { type: "image", src: "./images/professional-projects/the-great-gwangju/g-1.jpg"},
             { type: "image", src: "./images/professional-projects/the-great-gwangju/g-2.jpg"},
-            { type: "image", src: "./images/professional-projects/the-great-gwangju/g-3.JPG"},
+            { type: "image", src: "./images/professional-projects/the-great-gwangju/g-3.jpg"},
             { type: "text", content: "We also tested different design options."},
             { type: "image", src: "./images/professional-projects/the-great-gwangju/g-4.jpg"},
             { type: "image", src: "./images/professional-projects/the-great-gwangju/g-5.jpg"},

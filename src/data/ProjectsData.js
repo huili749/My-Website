@@ -54,6 +54,7 @@ const ProjectsData = [
         images: [
             { type: "image", src: "./images/research-projects/spatial-analysis/hero.jpg"},
             { type: "text", content: "Utilizing R and ArcGIS to visualize and analyze spatial data effectively. This includes layer visualization, feature attribute representation, distance measurement, and network distance calculations."},
+            { type: "image", src: "./images/research-projects/spatial-analysis/g-0.jpg"},
             { type: "image", src: "./images/research-projects/spatial-analysis/g-1.jpg"},
             { type: "image", src: "./images/research-projects/spatial-analysis/g-2.jpg"},
             { type: "text", content: "The map illustrates accessibility to restaurants and schools, with proximity between these amenities clearly shown.The municipalboundary for Cambridge was obtained fromTlGER/Line shapeflesusing the tigris package, while the street network and amenityinformation were sourced from OpenStreetMap (HOT OSM). The map was generated in R Studio, with layout and map enhancements completed in illustrator." },

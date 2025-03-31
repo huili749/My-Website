@@ -38,7 +38,6 @@ const Projects = ({ projects }) => {
                                 <video
                                     className="project-video"
                                     src={project.images[0]?.src} // Render the first video
-                                    controls
                                     autoPlay
                                     loop
                                     muted

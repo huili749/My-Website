@@ -78,3 +78,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 >>>>>>> 1bfabed (Update for Github Pages deployment)
 =======
 >>>>>>> 9aa7fb30124b353436ceefc0366541737f2680ac
+
+git add .
+git commit -m "aaa"
+git push origin main
+npm start
+npm run deploy
